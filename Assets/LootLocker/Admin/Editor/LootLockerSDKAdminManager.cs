@@ -29,7 +29,7 @@ namespace LootLockerAdminRequests
             Debug.LogWarning("Loading admin config..");
 
             if (LootLockerAdminConfig.current == null)
-                LootLockerAdminConfig.current = Resources.Load("Config/LootLockerAdminConfig") as LootLockerAdminConfig;
+                LootLockerAdminConfig.current = Resources.Load("Config/LootLockerAdminConfign") as LootLockerAdminConfig;
 
             if (LootLockerEndPointsAdmin.current == null)
                 LootLockerEndPointsAdmin.current = Resources.Load("Config/LootLockerEndPointsAdmin") as LootLockerEndPointsAdmin;

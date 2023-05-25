@@ -346,7 +346,7 @@ public partial class LootlockerAdminPanel : EditorWindow
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("popular: ");
-            EditorGUILayout.LabelField(activeAsset.popular.ToString());
+           // EditorGUILayout.LabelField(activeAsset.popular.ToString());
             EditorGUILayout.EndHorizontal();
 
             #endregion
@@ -354,7 +354,7 @@ public partial class LootlockerAdminPanel : EditorWindow
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("popularity_score: ");
-            EditorGUILayout.LabelField(activeAsset.popularity_score.ToString());
+         //   EditorGUILayout.LabelField(activeAsset.popularity_score.ToString());
             EditorGUILayout.EndHorizontal();
 
             #endregion
@@ -370,7 +370,7 @@ public partial class LootlockerAdminPanel : EditorWindow
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("unique_instance: ");
-            EditorGUILayout.LabelField(activeAsset.unique_instance.ToString());
+     //       EditorGUILayout.LabelField(activeAsset.unique_instance.ToString());
             EditorGUILayout.EndHorizontal();
 
             #endregion
@@ -410,7 +410,7 @@ public partial class LootlockerAdminPanel : EditorWindow
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("featured: ");
-            EditorGUILayout.LabelField(activeAsset.featured.ToString());
+         //   EditorGUILayout.LabelField(activeAsset.featured.ToString());
             EditorGUILayout.EndHorizontal();
 
             #endregion

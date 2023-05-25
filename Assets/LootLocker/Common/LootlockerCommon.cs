@@ -54,35 +54,56 @@ namespace LootLocker
     public class Asset
     {
         public int id { get; set; }
-        public string name { get; set; }
+        public string uuid { get; set; }
         public bool active { get; set; }
         public bool purchasable { get; set; }
-        public string type { get; set; }
-        public int price { get; set; }
-        public string sales_price { get; set; }
-        public string display_price { get; set; }
+        public bool tradable { get; set; }
+        public bool marketable { get; set; }
+        public string name { get; set; }
         public string context { get; set; }
-        public string unlocks_context { get; set; }
-        public bool detachable { get; set; }
-        public string updated { get; set; }
-        public string marked_new { get; set; }
-        public int default_variation_id { get; set; }
-        public string description { get; set; }
-        public Links links { get; set; }
-        public string[] storage { get; set; }
-        public string rarity { get; set; }
-        public bool popular { get; set; }
-        public int popularity_score { get; set; }
-        public bool unique_instance { get; set; }
-        public string external_identifiers { get; set; }
-        public Rental_Options[] rental_options { get; set; }
-        public string[] filters { get; set; }
-        public Variation[] variations { get; set; }
-        public bool featured { get; set; }
-        public bool context_locked { get; set; }
-        public bool initially_purchasable { get; set; }
+        public string last_changed { get; set; }
+        public int price { get; set; }
+        public int sales_price { get; set; }
+        public List<Filter> filters { get; set; }
+        public string thumbnail { get; set; }
+        public List<Variation> variations { get; set; }
+        public object rental_options { get; set; } 
+        public object storage { get; set; }
+        public object flagged { get; set; }
+        // public int id { get; set; }
+        // public string name { get; set; }
+        // public bool active { get; set; }
+        // public bool purchasable { get; set; }
+        // public string type { get; set; }
+        // public int price { get; set; }
+        // public string sales_price { get; set; }
+        // public string display_price { get; set; }
+        // public string context { get; set; }
+        // public string unlocks_context { get; set; }
+         public bool detachable { get; set; }
+        // public string updated { get; set; }
+        // public string marked_new { get; set; }
+         public int default_variation_id { get; set; }
+        // public string description { get; set; }
+        // public Links links { get; set; }
+        // public string[] storage { get; set; }
+        // public string rarity { get; set; }
+        // public bool popular { get; set; }
+        // public int popularity_score { get; set; }
+        // public bool unique_instance { get; set; }
+        // public string external_identifiers { get; set; }
+        // public Rental_Options[] rental_options { get; set; }
+        // public string[] filters { get; set; }
+        // public Variation[] variations { get; set; }
+        // public bool featured { get; set; }
+        // public bool context_locked { get; set; }
+        // public bool initially_purchasable { get; set; }
     }
-
+    public class Filter
+    {
+        public string name { get; set; }
+        public string value { get; set; }
+    }
     public class File
     {
         public string url { get; set; }

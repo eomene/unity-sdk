@@ -111,7 +111,7 @@ public class PlayerProfile : MonoBehaviour
                     {
                         PopupData PopupData = new PopupData();
                         PopupData.buttonText = "Ok";
-                        PopupData.url = rewardObjects[i].asset.links.thumbnail;
+                       // PopupData.url = rewardObjects[i].asset.links.thumbnail;
                         PopupData.withKey = true;
                         PopupData.normalText = new Dictionary<string, string>() { { "Reward", rewardObjects[i].asset.name } };
                         PopupData.header = "You got a reward";
